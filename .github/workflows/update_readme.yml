@@ -5,6 +5,9 @@ on:
     - cron: '0 */12 * * *'  # Cada 12 horas
   workflow_dispatch:          # Permite ejecutarlo manualmente también
 
+permissions:
+  contents: write 
+
 jobs:
   update-readme:
     runs-on: ubuntu-latest
